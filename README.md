@@ -26,3 +26,9 @@ test code from other exercises.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+## Answer 
+
+The worst-case time complexity of this algorithm is $O(V^3)$, where $V$ is the number of vertices in the graph.
+
+The algorithim initializes an array which involves two nested loops, so the time complexity for this initialization is $O(V^2)$. The algorithm then iterates over each vertex in the graph and assigns weights to edges in the matrix, this gives a time complexity of $O(E)$. The Floyd-Warshall Algorithm finds the shortest paths betwen all pairs of vertices. In this algorithm there are three nested loops giving a complexity of $O(V^3)$. Combining all these time complexities and simplifying results in the worst case time complexity of $O(V^3)$. 
